@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Message {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  body      String
+  createdAt DateTime @default(now())
+}
+
+model Visitor {
+  id        String       @id @default(cuid())
+  sessionId String       @unique
+  ip        String?
+  userAgent String?
+  visitedAt DateTime     @default(now())
+  commands  CommandLog[]
+}
+
+model CommandLog {
+  id        String   @id @default(cuid())
+  visitorId String
+  command   String
+  timestamp DateTime @default(now())
+  visitor   Visitor  @relation(fields: [visitorId], references: [id])
+}
