@@ -50,11 +50,14 @@ export default function ContactView() {
           <div className="space-y-2 font-mono text-sm">
             <div className="flex gap-2">
               <span className="text-[var(--color-text-muted)]">Email:</span>
-              <a
-                href={`mailto:${about.email}`}
-                className="text-[var(--color-accent)] hover:underline"
-              >
+              <a href={`mailto:${about.email}`} className="text-[var(--color-accent)] hover:underline">
                 {about.email}
+              </a>
+            </div>
+            <div className="flex gap-2">
+              <span className="text-[var(--color-text-muted)]">Phone:</span>
+              <a href={`tel:${about.phone}`} className="text-[var(--color-accent)] hover:underline">
+                {about.phone}
               </a>
             </div>
             <div className="flex gap-2">

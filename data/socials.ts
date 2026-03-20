@@ -8,32 +8,26 @@ export interface Social {
 export const socials: Social[] = [
   {
     platform: 'GitHub',
-    url: 'https://github.com/aditya',
+    url: 'https://github.com/Aditya-G-22',
     icon: '⌥',
-    handle: '@aditya',
+    handle: '@Aditya-G-22',
   },
   {
     platform: 'LinkedIn',
-    url: 'https://linkedin.com/in/aditya-dev',
+    url: 'https://linkedin.com/in/aditya-garg',
     icon: '◈',
-    handle: 'aditya-dev',
-  },
-  {
-    platform: 'Twitter / X',
-    url: 'https://twitter.com/aditya_dev',
-    icon: '◉',
-    handle: '@aditya_dev',
-  },
-  {
-    platform: 'Dev.to',
-    url: 'https://dev.to/aditya',
-    icon: '◎',
-    handle: 'aditya',
+    handle: 'aditya-garg',
   },
   {
     platform: 'Email',
-    url: 'mailto:aditya@example.com',
+    url: 'mailto:adityagarg535@gmail.com',
     icon: '◐',
-    handle: 'aditya@example.com',
+    handle: 'adityagarg535@gmail.com',
+  },
+  {
+    platform: 'Phone',
+    url: 'tel:+919896518857',
+    icon: '◉',
+    handle: '+91 9896518857',
   },
 ]

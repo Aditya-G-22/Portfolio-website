@@ -9,39 +9,33 @@ export interface Experience {
 
 export const experience: Experience[] = [
   {
-    company: 'Axiom Systems',
-    role: 'Senior Full-Stack Engineer',
-    period: 'Jan 2023 — Present',
+    company: 'Curium | Medical Transcription',
+    role: 'Frontend Web Developer Intern',
+    period: 'Jan 2024 — Apr 2024',
     description:
-      'Led the frontend rewrite of a legacy analytics dashboard serving 200K+ monthly active users. Reduced load time by 60% by migrating to React Server Components and implementing edge caching. Designed and shipped a real-time alerting system processing 5M+ events/day.',
-    tech: ['Next.js', 'TypeScript', 'Go', 'Kafka', 'Redis', 'PostgreSQL', 'Kubernetes'],
-    type: 'full-time',
-  },
-  {
-    company: 'Freelance',
-    role: 'Contract Full-Stack Developer',
-    period: 'Jun 2022 — Dec 2022',
-    description:
-      'Built and delivered 4 production web applications for startups across fintech and edtech verticals. Responsible for full lifecycle: architecture, development, deployment, and handoff documentation.',
-    tech: ['React', 'Node.js', 'Stripe', 'Supabase', 'Vercel'],
-    type: 'contract',
-  },
-  {
-    company: 'Devstack Labs',
-    role: 'Software Engineer',
-    period: 'Aug 2020 — May 2022',
-    description:
-      'Core team member for a developer tooling startup. Built the CLI toolchain and IDE extension (VS Code) downloaded 50K+ times. Implemented the plugin registry system and wrote the documentation site from scratch.',
-    tech: ['TypeScript', 'Node.js', 'VS Code API', 'Electron', 'SQLite'],
-    type: 'full-time',
-  },
-  {
-    company: 'TechBridge India',
-    role: 'Software Intern',
-    period: 'May 2019 — Jul 2019',
-    description:
-      'Worked on internal automation tools. Built a Slack bot that automated sprint reporting, saving 3 hours per week of manual work. Fixed 20+ bugs in a React Native mobile app.',
-    tech: ['Python', 'Slack API', 'React Native', 'JavaScript'],
+      'Built a full-stack medical imaging tool using React.js, Django REST APIs, and PostgreSQL for hernia diagnosis. Designed responsive UIs and integrated image visualization and annotation features to enhance doctor feedback workflows. Collaborated with backend developers to ensure smooth API integration and optimized data flow across the application.',
+    tech: ['React.js', 'Django', 'REST API', 'PostgreSQL', 'JavaScript', 'HTML', 'CSS'],
     type: 'internship',
+  },
+]
+
+export const education = [
+  {
+    institution: 'RVU',
+    degree: 'Bachelor of Engineering in Computer Science and Engineering',
+    period: 'Aug 2022 — Aug 2026',
+    grade: 'CGPA: 6.60',
+  },
+  {
+    institution: 'Sky Hawk International School, Delhi',
+    degree: 'Grade XII',
+    period: '2022',
+    grade: '72%',
+  },
+  {
+    institution: 'Scholars Rosary Senior Secondary School, Rohtak',
+    degree: 'Grade X',
+    period: '2020',
+    grade: '88.5%',
   },
 ]
