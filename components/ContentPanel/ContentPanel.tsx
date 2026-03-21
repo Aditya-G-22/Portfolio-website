@@ -5,7 +5,6 @@ import { useTerminalStore } from '@/store/useTerminalStore'
 import HomeView from './HomeView'
 import AboutView from './AboutView'
 import ProjectsView from './ProjectsView'
-import SkillsView from './SkillsView'
 import ExperienceView from './ExperienceView'
 import ContactView from './ContactView'
 import ResumeView from './ResumeView'
@@ -17,7 +16,6 @@ export default function ContentPanel() {
     home: <HomeView />,
     about: <AboutView />,
     projects: <ProjectsView />,
-    skills: <SkillsView />,
     experience: <ExperienceView />,
     contact: <ContactView />,
     resume: <ResumeView />,

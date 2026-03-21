@@ -18,16 +18,4 @@ export const socials: Social[] = [
     icon: '◈',
     handle: 'aditya-garg',
   },
-  {
-    platform: 'Email',
-    url: 'mailto:adityagarg535@gmail.com',
-    icon: '◐',
-    handle: 'adityagarg535@gmail.com',
-  },
-  {
-    platform: 'Phone',
-    url: 'tel:+919896518857',
-    icon: '◉',
-    handle: '+91 9896518857',
-  },
 ]

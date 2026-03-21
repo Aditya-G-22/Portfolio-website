@@ -5,7 +5,6 @@ export type ViewType =
   | 'home'
   | 'about'
   | 'projects'
-  | 'skills'
   | 'experience'
   | 'contact'
   | 'resume'

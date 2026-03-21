@@ -18,10 +18,13 @@ export default function Terminal() {
     setMinimized,
   } = useTerminalStore()
 
-  const containerRef = useRef<HTMLDivElement>(null)
+  const containerRef  = useRef<HTMLDivElement>(null)
+  const welcomedRef   = useRef(false)
 
-  // Show welcome on mount
+  // Show welcome on mount — guard prevents double-print in React Strict Mode
   useEffect(() => {
+    if (welcomedRef.current) return
+    welcomedRef.current = true
     WELCOME_MESSAGE.forEach((line) => {
       addTerminalEntry({ type: 'info', text: line })
     })

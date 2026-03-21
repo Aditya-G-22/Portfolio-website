@@ -44,12 +44,11 @@ export function parseArgs(input: string): { args: string[]; flags: Record<string
 
 // ── ASCII welcome banner ─────────────────────────────────────────────────────
 export const WELCOME_BANNER = `
-  ██████╗  ██████╗ ██████╗ ████████╗███████╗ ██████╗ ██╗      ██╗ ██████╗
-  ██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██╔═══██╗██║      ██║██╔═══██╗
-  ██████╔╝██║   ██║██████╔╝   ██║   █████╗  ██║   ██║██║      ██║██║   ██║
-  ██╔═══╝ ██║   ██║██╔══██╗   ██║   ██╔══╝  ██║   ██║██║      ██║██║   ██║
-  ██║     ╚██████╔╝██║  ██║   ██║   ██║     ╚██████╔╝███████╗ ██║╚██████╔╝
-  ╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝ ╚═╝ ╚═════╝
+  +----------------------------------+
+  |   portfolio-os  v1.0.0           |
+  |   Aditya Garg                    |
+  |   ML Engineer & Full-Stack Dev   |
+  +----------------------------------+
 `.trim()
 
 export const WELCOME_MESSAGE = [
@@ -87,20 +86,16 @@ export const commandRegistry: Record<string, Command> = {
         '  Available commands:',
         '  ──────────────────────────────────────────────────────────────',
         '  help           Show this help message',
-        '  about          View bio, skills overview, and profile',
+        '  about          View bio and profile',
         '  projects       Browse project portfolio',
-        '  skills         View technical skills breakdown',
         '  experience     View work history & experience timeline',
-        '  contact        View contact information',
-        '  socials        List social media links',
-        '  message        Send a message (see usage below)',
+        '  contact        View contact info & send a message',
         '  theme          Change the color theme',
         '  resume         View / download resume',
         '  history        Show command history',
         '  clear          Clear the terminal',
         '  welcome        Show welcome screen',
         '  ──────────────────────────────────────────────────────────────',
-        '  Usage: message --name "Your Name" --email "you@mail.com" --body "Hi!"',
         '  Usage: theme [dark|light|hacker|retro]',
       ],
       type: 'info',
@@ -127,16 +122,6 @@ export const commandRegistry: Record<string, Command> = {
     }),
   },
 
-  skills: {
-    name: 'skills',
-    description: 'View technical skills breakdown',
-    handler: () => ({
-      output: ['  Loading skills...'],
-      view: 'skills',
-      type: 'success',
-    }),
-  },
-
   experience: {
     name: 'experience',
     description: 'View work history & experience timeline',
@@ -154,21 +139,6 @@ export const commandRegistry: Record<string, Command> = {
       output: ['  Loading contact details...'],
       view: 'contact',
       type: 'success',
-    }),
-  },
-
-  socials: {
-    name: 'socials',
-    description: 'List social media links',
-    handler: () => ({
-      output: [
-        '  Social links:',
-        '  ─────────────────────────────────────────',
-        ...socials.map(
-          (s) => `  ${s.icon}  ${s.platform.padEnd(14)} ${s.url}`
-        ),
-      ],
-      type: 'info',
     }),
   },
 

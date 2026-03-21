@@ -34,7 +34,7 @@ export default function ExperienceView() {
         {/* Experience */}
         <div>
           <motion.h1 variants={item} className="font-mono text-xs text-[var(--color-text-muted)] uppercase tracking-widest border-b border-[var(--color-border)] pb-1 mb-6">
-            // work experience
+            work experience
           </motion.h1>
 
           <div className="relative">
@@ -82,7 +82,7 @@ export default function ExperienceView() {
         {/* Education */}
         <div>
           <motion.h2 variants={item} className="font-mono text-xs text-[var(--color-text-muted)] uppercase tracking-widest border-b border-[var(--color-border)] pb-1 mb-6">
-            // education
+            education
           </motion.h2>
 
           <div className="relative">

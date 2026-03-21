@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useTerminalStore } from '@/store/useTerminalStore'
 
-const commands = ['about', 'projects', 'skills', 'experience', 'contact', 'resume']
+const commands = ['about', 'projects', 'experience', 'contact', 'resume']
 
 export default function HomeView() {
   const { addTerminalEntry, setView, addCommandHistory } = useTerminalStore()

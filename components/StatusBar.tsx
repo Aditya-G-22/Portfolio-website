@@ -33,7 +33,7 @@ export default function StatusBar() {
       <div className="flex items-center gap-3 text-[var(--color-text-muted)]">
         <span className="text-[var(--color-accent)] font-bold">portfolio-os</span>
         <span>v1.0.0</span>
-        <span className="hidden sm:inline">
+        <span className="hidden sm:inline" suppressHydrationWarning>
           session: {sessionId.slice(0, 8)}
         </span>
       </div>

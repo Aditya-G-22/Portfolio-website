@@ -1,7 +1,7 @@
 export const about = {
   name: 'Aditya Garg',
   title: 'Final-Year CS Student · ML & Full-Stack Developer',
-  location: 'India',
+  location: 'Bangalore, Karnataka, India',
   bio: [
     "Hey, I'm Aditya. I'm that guy who'll spend three hours tweaking a color palette and somehow enjoy every minute of it. Design is kind of my thing — UI/UX, graphics, game visuals — if it involves making something look and feel amazing, I'm already hooked.",
     "I genuinely believe great design works a lot like great storytelling, which is probably why I'm so drawn to old-school games with deep, immersive narratives. There's something about those worlds that just pulls you in, you know? I also love video and photo editing — there's a weird kind of magic in taking a bunch of raw footage or shots and turning them into something people actually want to watch.",
