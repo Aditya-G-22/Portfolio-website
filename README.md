@@ -4,14 +4,6 @@
 
 ### *A terminal-driven developer portfolio — where design meets code*
 
-![Next.js](https://img.shields.io/badge/Next.js_16-black?style=for-the-badge&logo=next.js)
-![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-
-**[🌐 Live Demo](https://your-portfolio-url.vercel.app)** &nbsp;·&nbsp; **[📄 Resume](https://your-portfolio-url.vercel.app)**
 
 ---
 
