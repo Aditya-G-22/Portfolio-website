@@ -1,201 +1,256 @@
-# portfolio-os
+<div align="center">
 
-An interactive, terminal-driven developer portfolio built with Next.js 16 and React 19. Visitors navigate the portfolio by typing commands into a floating terminal widget — mimicking an OS shell experience.
+# ⬛ Portfolio OS
+
+### *A terminal-driven developer portfolio — where design meets code*
+
+![Next.js](https://img.shields.io/badge/Next.js_16-black?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+**[🌐 Live Demo](https://your-portfolio-url.vercel.app)** &nbsp;·&nbsp; **[📄 Resume](https://your-portfolio-url.vercel.app)**
 
 ---
 
-## What This Project Is
+<!-- ============================================================ -->
+<!-- 📸 SCREENSHOT #1 — Full hero shot                           -->
+<!-- Capture: Full browser window showing homepage               -->
+<!-- Shows: ASCII portrait + WELCOME banner + retrowave bg       -->
+<!-- Window width: 1440px recommended                            -->
+<!-- Save to: assets/hero.png                                    -->
+<!-- ============================================================ -->
 
-Instead of a traditional click-based portfolio, this site presents everything through a terminal interface. A visitor types `about`, `projects`, `skills`, etc. and the main content panel updates with animated transitions. It is styled to look and feel like a developer's OS environment, with a status bar, theme switcher, and resizable terminal window.
+![Hero](assets/hero.png)
 
-The site belongs to **Aditya Garg** — a final-year Information Science student and ML/full-stack developer based in India.
+</div>
 
 ---
 
-## Tech Stack
+## ✦ What is this?
+
+This is not your average portfolio. **Portfolio OS** is designed to feel like an operating system running inside your browser — complete with a **floating CRT monitor terminal**, **OS-style navigation**, a **retrowave animated wallpaper**, and **4 switchable color themes**.
+
+Every detail is intentional — from the scanline overlay on the CRT screen, to the newspaper-style About page, to the blurred project panels that reveal themselves on hover. This project sits right at the intersection of **UI/UX craft and full-stack engineering**.
+
+---
+
+## 🎨 Design Showcase
+
+> *Design was the first priority — engineering made it real.*
+
+<br/>
+
+### 🖥️ Retro CRT Monitor Terminal
+
+A fully custom-built floating terminal styled as a **vintage CRT monitor**. Not a library — built entirely from scratch with CSS gradients and layered shadows.
+
+**Details that matter:**
+- Bezel with 3-stop gradient shading
+- Inner screen lip with depth shadow
+- Repeating scanline overlay
+- Radial vignette effect
+- Corner glare reflection
+- Power LED with glow pulse
+- A cat sitting on top 🐱
+
+<!-- ============================================================ -->
+<!-- 📸 SCREENSHOT #2 — CRT Terminal close-up                    -->
+<!-- Capture: Bottom-right corner, terminal expanded             -->
+<!-- Shows: Full CRT monitor bezel, cat, terminal content        -->
+<!-- Tip: Dark theme looks best for this one                     -->
+<!-- Save to: assets/crt-terminal.png                           -->
+<!-- ============================================================ -->
+
+![CRT Terminal](assets/crt-terminal.png)
+
+---
+
+### 🌅 Project Gallery — Hover Reveal
+
+The projects section opens with a **split-screen panel selector**. Each panel's wallpaper is blurred and heavily darkened by default — then **sharpens and brightens on hover**, with the label spreading apart and the description fading in.
+
+<!-- ============================================================ -->
+<!-- 📸 SCREENSHOT #3 — Projects hover                           -->
+<!-- Capture: Hover over one panel (CS/Dev or Design)           -->
+<!-- Shows: One panel revealed + sharp, other still dark+blurry  -->
+<!-- Tip: The contrast between the two sides is the money shot   -->
+<!-- Save to: assets/projects-hover.png                         -->
+<!-- ============================================================ -->
+
+![Projects](assets/projects-hover.png)
+
+---
+
+### 📰 Newspaper-Style About Page
+
+The About section is designed as an **editorial layout** inspired by print newspapers — large masthead typography, structured multi-column content, and a vertical rotated name sidebar.
+
+<!-- ============================================================ -->
+<!-- 📸 SCREENSHOT #4 — About page                               -->
+<!-- Capture: Full About view                                     -->
+<!-- Shows: ABOUT ME masthead, photo, bio columns, skills row    -->
+<!-- Save to: assets/about.png                                   -->
+<!-- ============================================================ -->
+
+![About](assets/about.png)
+
+---
+
+### 🎨 4 Live Color Themes
+
+Type `theme dark`, `theme light`, `theme hacker`, or `theme retro` in the terminal to switch the **entire UI's color palette in real time** — no page reload.
+
+<!-- ============================================================ -->
+<!-- 📸 SCREENSHOT #5 — Theme collage                            -->
+<!-- Capture: 4 screenshots, one per theme, same view            -->
+<!-- Stitch them as a 2×2 grid in Canva / Photopea              -->
+<!-- Shows: How the same layout transforms across themes         -->
+<!-- Save to: assets/themes.png                                  -->
+<!-- ============================================================ -->
+
+![Themes](assets/themes.png)
+
+---
+
+### 📬 Contact & Message
+
+A split-panel contact page — info and social links on the left, a fully functional **message form** on the right that saves to PostgreSQL via a Next.js API route.
+
+<!-- ============================================================ -->
+<!-- 📸 SCREENSHOT #6 — Contact page                             -->
+<!-- Capture: Full contact view, form visible                    -->
+<!-- Shows: Two-column layout, social buttons, input fields      -->
+<!-- Save to: assets/contact.png                                 -->
+<!-- ============================================================ -->
+
+![Contact](assets/contact.png)
+
+---
+
+## ⚙️ Tech Stack
 
 | Layer | Technology |
 |---|---|
-| Framework | Next.js 16 (App Router) |
-| UI | React 19, Tailwind CSS v4 |
-| Animation | Framer Motion |
-| State | Zustand |
-| Database | PostgreSQL via Prisma ORM v7 |
-| Font | JetBrains Mono |
-| Hosting | Vercel |
-| DB Host | Neon (serverless Postgres) |
+| **Framework** | Next.js 16 (App Router) |
+| **UI Library** | React 19 |
+| **Styling** | Tailwind CSS v4 |
+| **Animations** | Framer Motion |
+| **State Management** | Zustand |
+| **Database** | PostgreSQL (Neon serverless) |
+| **ORM** | Prisma v7 |
+| **Deployment** | Vercel + GitHub Actions CI |
 
 ---
 
-## Project Structure
+## 🚀 Features
+
+- 🖥️ **OS-style terminal navigation** — type commands to navigate the portfolio
+- 📟 **Custom CRT monitor widget** — hand-crafted retro terminal aesthetic
+- 🌊 **Retrowave wallpaper** — vaporwave landscape background
+- 🎨 **4 live color themes** — dark · light · hacker · retro
+- 📁 **Project gallery** — CS/Dev & Design split with hover-reveal backgrounds
+- 📰 **Newspaper About layout** — editorial print-inspired design
+- 📄 **Inline resume view** — full resume rendered as HTML + PDF download
+- 📬 **Contact form** — messages saved to PostgreSQL via API
+- ⌨️ **Keyboard shortcuts** — `` ` `` toggle · `Ctrl+L` clear · `Ctrl+K` focus
+- 📊 **Visitor analytics** — session & command logging to database
+- 🐱 **Cat on the monitor** — the most important feature
+
+---
+
+## ⌨️ Terminal Commands
+
+| Command | Action |
+|---|---|
+| `help` | List all commands |
+| `about` | View bio and profile |
+| `projects` | Browse project gallery |
+| `experience` | Work history & education |
+| `contact` | Contact info & send message |
+| `resume` | View resume inline |
+| `theme [dark\|light\|hacker\|retro]` | Switch color theme |
+| `history` | Show command history |
+| `clear` | Clear terminal |
+
+**Shortcuts:** `` ` `` toggles terminal · `Ctrl+L` clears · `Ctrl+K` focuses input
+
+---
+
+## 🛠️ Running Locally
+
+```bash
+# Clone
+git clone https://github.com/your-username/portfolio-os.git
+cd portfolio-os
+
+# Install
+npm install
+
+# Add your DATABASE_URL to .env
+echo 'DATABASE_URL="postgresql://..."' > .env
+
+# Push schema & generate client
+npx prisma db push
+npx prisma generate
+
+# Run
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) — type `help` in the terminal to start.
+
+---
+
+## 📁 Project Structure
 
 ```
 portfolio/
 ├── app/
-│   ├── layout.tsx              # Root layout, JetBrains Mono font, ThemeProvider
-│   ├── page.tsx                # Main page: StatusBar + ContentPanel + Terminal
-│   ├── globals.css             # Global styles and CSS variable definitions
+│   ├── page.tsx                # Root page (wallpaper + layout)
+│   ├── globals.css             # CSS variables & global styles
 │   └── api/
-│       ├── log/route.ts        # POST /api/log — logs visitor commands to DB
-│       └── message/route.ts    # POST /api/message — saves contact messages to DB
-│
+│       ├── message/route.ts    # POST — saves contact messages
+│       └── log/route.ts        # POST — logs visitor commands
 ├── components/
-│   ├── StatusBar.tsx           # Top bar: app name, session ID, view, theme, clock
-│   ├── ThemeProvider.tsx       # Applies CSS variables from active theme to :root
-│   ├── Terminal/
-│   │   ├── Terminal.tsx        # Floating resizable terminal widget (bottom-right)
-│   │   ├── TerminalInput.tsx   # Input with command history (↑↓ navigation)
-│   │   ├── TerminalOutput.tsx  # Renders terminal history entries with color coding
-│   │   └── commandRegistry.ts  # All commands + argument parser + welcome banner
-│   └── ContentPanel/
-│       ├── ContentPanel.tsx    # Switches between views using AnimatePresence
-│       ├── HomeView.tsx        # Default landing view
-│       ├── AboutView.tsx       # Bio, skills summary, contact info
-│       ├── ProjectsView.tsx    # Project cards with tech tags
-│       ├── SkillsView.tsx      # Skill categories with level bars
-│       ├── ExperienceView.tsx  # Work history and education timeline
-│       ├── ContactView.tsx     # Contact details
-│       └── ResumeView.tsx      # Resume viewer/download
-│
-├── data/                       # All personal content as typed TS files
-│   ├── about.ts                # Name, bio, contact, availability
-│   ├── projects.ts             # Project list with tech, links, descriptions
-│   ├── skills.ts               # Skill categories with proficiency levels (0-100)
-│   ├── experience.ts           # Work experience + education entries
-│   └── socials.ts              # GitHub, LinkedIn, email, phone
-│
-├── store/
-│   └── useTerminalStore.ts     # Zustand store: currentView, theme, terminal history,
-│                               # command history, session ID, minimized state
-│
-├── styles/
-│   └── themes.ts               # 4 themes: dark, light, hacker, retro (CSS var values)
-│
-├── lib/
-│   ├── prisma.ts               # Prisma client singleton (imports from generated path)
-│   └── generated/prisma/       # Auto-generated by `prisma generate` (gitignored)
-│
-├── prisma/
-│   └── schema.prisma           # DB schema: Message, Visitor, CommandLog models
-│
-├── prisma.config.ts            # Prisma v7 config: schema path, migrations path, DB URL
-├── package.json                # build = "prisma generate && next build"
-└── .github/workflows/
-    └── nextjs.yml              # CI: install → lint → build on every push to main
+│   ├── Terminal/               # CRT monitor + terminal + command registry
+│   └── ContentPanel/           # All views: Home, About, Projects, etc.
+├── data/                       # All content as TypeScript files
+├── store/                      # Zustand global state
+├── styles/                     # Theme color definitions
+└── public/                     # Static assets + wallpapers
 ```
 
 ---
 
-## Terminal Commands
-
-| Command | Description |
-|---|---|
-| `help` | List all available commands |
-| `about` | View bio and profile |
-| `projects` | Browse project portfolio |
-| `skills` | View technical skills with levels |
-| `experience` | Work history and education timeline |
-| `contact` | Contact information |
-| `socials` | List social media links |
-| `resume` | View/download resume |
-| `message --name "X" --email "Y" --body "Z"` | Send a contact message |
-| `theme [dark\|light\|hacker\|retro]` | Switch color theme |
-| `history` | Show command history |
-| `clear` | Clear terminal output |
-| `welcome` | Show welcome banner |
-
-**Keyboard shortcuts:** `` ` `` toggles terminal · `Ctrl+L` clears · `Ctrl+K` focuses input
-
----
-
-## Database Schema
-
-```prisma
-model Message {
-  id        String   @id @default(cuid())
-  name      String
-  email     String
-  body      String
-  createdAt DateTime @default(now())
-}
-
-model Visitor {
-  id        String       @id @default(cuid())
-  sessionId String       @unique
-  ip        String?
-  userAgent String?
-  visitedAt DateTime     @default(now())
-  commands  CommandLog[]
-}
-
-model CommandLog {
-  id        String   @id @default(cuid())
-  visitorId String
-  command   String
-  timestamp DateTime @default(now())
-  visitor   Visitor  @relation(fields: [visitorId], references: [id])
-}
-```
-
-Every terminal command a visitor types is silently logged (fire-and-forget) to `CommandLog`, linked to a `Visitor` record identified by a random `sessionId` generated client-side.
-
----
-
-## Themes
-
-| Name | Description |
-|---|---|
-| `dark` | Default — GitHub-inspired dark blue/grey |
-| `light` | Clean white with blue accents |
-| `hacker` | Matrix-style green on black |
-| `retro` | Amber CRT monitor look |
-
-All colors are applied via CSS custom properties (`--color-bg`, `--color-text`, etc.) set dynamically by `ThemeProvider`.
-
----
-
-## Environment Variables
-
-| Variable | Description |
-|---|---|
-| `DATABASE_URL` | PostgreSQL connection string (Neon) |
-
-Set this in Vercel dashboard under **Settings → Environment Variables**. Also set it in `.env` locally for development and running `prisma generate` / `prisma db push`.
-
----
-
-## Local Development
-
-```bash
-# Install dependencies
-npm install
-
-# Set up .env with your DATABASE_URL, then push schema to database
-npx prisma db push
-
-# Start dev server
-npm run dev
-```
-
----
-
-## Deployment (Vercel)
+## 🌍 Deployment
 
 1. Push repo to GitHub
-2. Import project on vercel.com
-3. Add `DATABASE_URL` environment variable in Vercel dashboard
-4. Vercel runs `prisma generate && next build` automatically on each push
+2. Import on [vercel.com](https://vercel.com)
+3. Add `DATABASE_URL` in Vercel → Settings → Environment Variables
+4. Vercel auto-runs `prisma generate && next build` on every push
 
 ---
 
-## Personal Data — Where to Edit
+## ✏️ Editing Content
 
-To update portfolio content, only edit files in `/data/`:
+All personal content lives in `/data/` — no component changes needed:
 
-- **Bio, contact, availability** → `data/about.ts`
-- **Projects** → `data/projects.ts`
-- **Skills and levels** → `data/skills.ts`
-- **Work experience and education** → `data/experience.ts`
-- **Social links** → `data/socials.ts`
+| File | Controls |
+|---|---|
+| `data/about.ts` | Name, bio, location, availability |
+| `data/projects.ts` | Project cards, tech, links |
+| `data/experience.ts` | Work history & education |
+| `data/socials.ts` | Social links |
 
-No other files need to be touched for content updates.
+---
+
+<div align="center">
+
+Made with obsessive attention to detail by **[Aditya Garg](https://github.com/Aditya-G-22)**
+
+*"If you're doing something, do it like no one can do it better than you."*
+
+</div>
