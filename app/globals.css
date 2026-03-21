@@ -7,10 +7,10 @@
   --color-bg-terminal: #161b22;
   --color-text: #e6edf3;
   --color-text-muted: #7d8590;
-  --color-accent: #58a6ff;
+  --color-accent: #c084fc;
   --color-prompt: #3fb950;
   --color-border: #30363d;
-  --color-cursor: #58a6ff;
+  --color-cursor: #c084fc;
 }
 
 [data-theme="light"] {
@@ -59,6 +59,7 @@
 html,
 body {
   height: 100%;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   background-color: var(--color-bg);
